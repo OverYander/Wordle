@@ -8,16 +8,33 @@ a {
     color: #fcfcfc;
 }
 
-.navBar{
+ul{
+    display: flex;
+    justify-content: space-between;
     width: 100vw;
     height: 10vh;
-}
+    background-color: #2e2e2e;
 
-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 
-    background-color: #2e2e2e;
+}
+
+ul li {
+    float: left;
+    margin: auto auto;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 10vw;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: red;
 }
