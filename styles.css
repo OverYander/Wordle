@@ -12,6 +12,8 @@ a {
     color: #fcfcfc;
 }
 
+/* Navigation Bar */
+
 ul{
     display: flex;
     flex-wrap: nowrap;
@@ -30,31 +32,47 @@ ul{
     text-decoration: none;
 }
 
-ul .navLeft {
-    padding: 0px;
-    margin: auto 2rem;
-}
-
+/* space between nav side */
 ul .spacer{
     flex:1;
 }
 
+/*left*/
+ul .navLeft {
+    /* margin: auto 2rem; */
+    padding: 0px 2rem;
+
+    display: flex;
+    align-items: center;  
+}
+
+ul .navLeft:hover{
+    background-color: #575756;
+}
+
+/*right*/
 ul .navRight{
     display: flex;
-    padding: 0px;
     text-align: right;
 }
 
 ul .navRight li{
-    margin: auto 2rem;
+    display: flex;
+    align-items: center; 
+    padding: 0px 2rem;
 }
 
-.title{
-    font-size: 2em;
+ul .navRight li:hover{
+    background-color: #575756;
+}
+
+.title{ 
+    font-size: 1.5em;
+    font-family: 'Playwrite DE Grund', sans-serif;
     font-weight: bold;
+
+    padding: 0px 2rem;
 }
 
 
-ul li a:hover {
-    color: red;
-}
+
