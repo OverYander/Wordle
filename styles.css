@@ -1,4 +1,8 @@
-git body {
+* {
+    box-sizing: border-box;
+  }
+
+body {
     background-color: #333333;
     color: #fcfcfc;
     display: flex;
@@ -10,7 +14,7 @@ a {
 
 ul{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
     width: 100vw;
     height: 10vh;
     background-color: #2e2e2e;
@@ -20,20 +24,36 @@ ul{
     padding: 0;
     overflow: hidden;
 
-}
-
-ul li {
-    float: left;
-    margin: auto auto;
-}
-
-ul li a {
-    display: block;
     color: white;
-    text-align: center;
-    padding: 0px 10vw;
+
+    font-size: 3em;
     text-decoration: none;
 }
+
+ul .navLeft {
+    padding: 0px;
+    margin: auto 2rem;
+}
+
+ul .spacer{
+    flex:1;
+}
+
+ul .navRight{
+    display: flex;
+    padding: 0px;
+    text-align: right;
+}
+
+ul .navRight li{
+    margin: auto 2rem;
+}
+
+.title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
 
 ul li a:hover {
     color: red;
