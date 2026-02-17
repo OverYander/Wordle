@@ -1,12 +1,19 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-  }
+}
 
 body {
     background-color: #1c1c1c;
     color: #fcfcfc;
     display: flex;
     flex-direction: column;
+    align-items: center;  
+    gap: 2rem;
+
+    width: 100vw;
+    height: 100vh;
 }
 
 a {
@@ -73,13 +80,75 @@ a {
 /* Input Body */
 .inputBody {
     display: grid;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
 
-    width: 60vw;
-    height: 50vh;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-    border: 2px solid white;
+    width: 50vmin;
+    height: 50vmin;
+
+}
+
+.inputRows {
+    display: grid;
+    gap: 0.5rem;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
 
 
+.inputCell {
+    aspect-ratio: 1;
+    width: 100%;
+    border: 4px solid rgb(92, 91, 91);
+    border-radius: 0.5rem;
+}
+
+/* Keyboard */
+.keyboard {
+    flex:1;
+
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    margin: 0 auto 5vh auto;
+    padding: 0;
+
+    width: 60%;
+
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.kbRow1, .kbRow2, .kbRow3 {
+    display: grid;
+    gap: 0.5rem;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.keyboardCell {
+    aspect-ratio: 1;
+    width: 100%;
+    border: 4px solid rgb(92, 91, 91);
+    border-radius: 0.5rem;
+}
