@@ -20,7 +20,15 @@ const kbRow3 = document.querySelector('.kbRow3');
 for(let i = 0; i < keyboardStr.length; i++) {
     const keyboardCell = document.createElement('li');
     keyboardCell.classList.add('keyboardCell');
-    keyboardCell.textContent = keyboardStr[i];
+
+    const keyButton = document.createElement('button');
+    keyButton.textContent = keyboardStr[i];
+    keyboardCell.appendChild(keyButton);
+
+    // myElement.addEventListener("click", function (e) {
+
+    // });
+
     if(i < 10) kbRow1.appendChild(keyboardCell);
     else if(i < 19) kbRow2.appendChild(keyboardCell);   
     else kbRow3.appendChild(keyboardCell);
