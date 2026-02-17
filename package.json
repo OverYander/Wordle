@@ -1,0 +1,20 @@
+{
+  "name": "wordle",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/OverYander/Wordle#readme",
+  "bugs": {
+    "url": "https://github.com/OverYander/Wordle/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OverYander/Wordle.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
